@@ -1,0 +1,38 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu .menu__item+.menu__item {
+    margin-left: 50px;
+}
+
+.menu__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}

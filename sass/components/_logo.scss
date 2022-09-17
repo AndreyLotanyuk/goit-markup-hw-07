@@ -1,0 +1,22 @@
+.logo_accent {
+    color: var(--accent-color);
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
+}
+
+.page-navigation__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.footer-logo {
+    color: var(--main-color);
+    display: inline-block;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,47 @@
+.social-list {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list .social-list__item+.social-list__item {
+    margin-left: 10px;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--primary-svg-color);
+
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--main-color);
+        background-color: var(--accent-color);
+    }
+}
+
+.footer__contacts-item .social-list {
+    padding-bottom: 0;
+}
+
+.footer__contacts-item .social-list__link {
+    color: var(--main-color);
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--accent-color);
+    }
+}
